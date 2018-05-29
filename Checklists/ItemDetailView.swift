@@ -22,6 +22,7 @@ class ItemDetailView: UITableViewController, UITextFieldDelegate {
     
     var itemToEdit: CheckListItem?
     
+    
     weak var delegate : ItemDetailViewDelegate?
     
     override func viewDidLoad() {
