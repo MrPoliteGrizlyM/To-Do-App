@@ -99,7 +99,7 @@ class ChecklistViewController: UITableViewController, ItemDetailViewDelegate, Pu
         } else if segue.identifier == "CheckOldItems" {
             let controller = segue.destination as! CompletedTasksViewController
             controller.delegate = self
-            controller.items = oldItems
+            controller.items = oldItems.reversed()
         }
     }
 
